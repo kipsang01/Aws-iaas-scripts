@@ -63,7 +63,6 @@ Resources:
           cd /var/www/html
           echo "Udagram Web Server Up and Running!, You can now deploy sofware files" > index.html        
       ImageId: !Ref AMIID
-      KeyName: !Ref KeyPair
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
